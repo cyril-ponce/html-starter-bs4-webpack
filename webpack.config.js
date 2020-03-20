@@ -139,6 +139,21 @@ module.exports = {
       hash: true,
     }),
     new HtmlWebpackPlugin({
+      template: './assets/html/starter.html',
+      filename: 'starter.html',
+      hash: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: './assets/html/product.html',
+      filename: 'product.html',
+      hash: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: './assets/html/pricing.html',
+      filename: 'pricing.html',
+      hash: true,
+    }),
+    new HtmlWebpackPlugin({
       template: './assets/html/404.html',
       filename: '404.html',
       hash: true,
