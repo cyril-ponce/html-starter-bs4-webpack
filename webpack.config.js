@@ -154,6 +154,11 @@ module.exports = {
       hash: true,
     }),
     new HtmlWebpackPlugin({
+      template: './assets/html/jumbotron.html',
+      filename: 'jumbotron.html',
+      hash: true,
+    }),
+    new HtmlWebpackPlugin({
       template: './assets/html/404.html',
       filename: '404.html',
       hash: true,
