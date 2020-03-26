@@ -130,7 +130,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
+    port: 9005
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -156,6 +156,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './assets/html/jumbotron.html',
       filename: 'jumbotron.html',
+      hash: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: './assets/html/default.html',
+      filename: 'default.html',
       hash: true,
     }),
     new HtmlWebpackPlugin({
